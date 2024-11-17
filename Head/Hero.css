@@ -1,0 +1,142 @@
+:root{
+    --black: #000000;
+    --brown: #724111;
+    --primary: #FFFFFF
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+    color: var(--primary);
+}
+
+body{
+    width: auto;
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(112deg, rgba(0,0,0,1) 57%, rgba(114,65,17,1) 100%);
+}
+
+.Hero_Nav{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    /* background: var(--black); */
+    /* margin-top: 30px; */
+    padding-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Hero_Nav-Logo{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 120px;
+}
+
+.Hero_Nav-Links{
+    margin-right: 120px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.Hero_Nav-Links a{
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.Hero_Name{
+    font-size: 120px;
+    /* padding: 100px; */
+    margin-top: 170px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.Hero_Name-1{
+    color: rgb(253,212,18);
+    font-family: Playfair Display;
+    /* text-transform: uppercase;
+    font-weight: bolder; */
+    margin-left: -200px;
+}
+
+.Hero_Name-2{
+    color: rgb(253,212,18);
+    font-family: Playfair Display;
+    margin-left: +200px;
+    margin-top: -50px;
+    /* line-height: 60PX; */
+    /* text-transform: uppercase;
+    font-weight: bolder; */
+}
+
+.Hero_Name_2-Holo{
+    font-family: Playfair Display SC;  /* "Playfair Display" is not giving Proper output thats why iam using "Playfair Display SC" here*/
+    /* color:transparent; */
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(253,212,18);
+}
+
+/* .Hero_Name-2{
+    color: rgb(253,212,18);
+    color: linear-gradient(112deg, rgba(253,212,18,1) 0%, rgba(255,244,137,1) 100%);
+} */
+
+.Hero_Sub{
+    color: rgb(201, 201, 201);
+    font-size: 40px;
+    width: 610px;
+    text-align: center;
+    font-weight: 500;
+    /* transform: translateX(700px); */
+    margin-left: 650px;
+}
+
+.Hero_Btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.Hero_Btn-1 {
+    width: 200px;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    background: white;
+    padding: 20px;
+    margin-right: 40px;
+}
+
+.Hero_Btn-2{
+    width: 200px;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    padding: 19px;
+
+}
+
