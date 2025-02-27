@@ -1,23 +1,15 @@
 :root{
-    --black: #000000;
-    --brown: #724111;
     --primary: #FFFFFF
-
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: Roboto, Arial, Helvetica, sans-serif;
-
     color: var(--primary);
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
-
-
 .Hero_Container{
     padding-top: 60px;
     width: auto;
@@ -25,120 +17,85 @@
     background: rgb(0, 0, 0);
     background: linear-gradient(112deg, rgba(0,0,0,1) 57%, rgba(114,65,17,1) 100%);
 }
-
 .Hero_Nav{
     z-index: 100;
     width: 100%;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     background: rgb(0, 0, 0);
-    /* border-bottom: #ffffff50 1px solid; */
-    position: fixed; /* Fix the navbar at the top */
+    position: fixed; 
     top: 0;
     left: 0;
-    /* margin-top: 30px; */
     padding-top: 10px 0px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .Hero_Nav-Logo{
     font-size: 50px;
     font-weight: 600;
     margin-left: 120px;
 }
-
 .Hero_Nav-Links{
     margin-right: 120px;
     font-weight: bolder;
     font-size: 24px;
 }
-
 .Hero_Nav-Links a{
     margin-right: 20px;
     text-decoration: none;
 }
-
 .Hero_Nav-Links a:hover{
     opacity: 0.6;
     transition: 0.3s ease;
 }
-
-
 .Hero_Name{
     font-size: 120px;
     padding-top: 200px;
-    /* margin-top: 170px; */
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 5px;
 }
-
 .Hero_Name-1{
     color: rgb(253,212,18);
     font-family: Playfair Display;
-    /* text-transform: uppercase;
-    font-weight: bolder; */
     margin-left: -200px;
 }
-
 .Hero_Name-2{
     color: rgb(253,212,18);
     font-family: Playfair Display;
     margin-left: +200px;
     margin-top: -50px;
-    /* line-height: 60PX; */
-    /* text-transform: uppercase;
-    font-weight: bolder; */
 }
-
-/* --------------- Name Animation ------------- */
 .Hero_Name, .Hero_Sub p, .Hero_Btn{
     animation: titleAnimation 1.5s ;
 }
-
 @keyframes titleAnimation {
     0%{
         opacity: 0;
     }
-
     25%{
         opacity: 0.25;
     }
-
     50%{
         opacity: 0.5;
     }
-
     75%{
         opacity: 0.75;
     }
-
     100%{
         opacity: 1;
     }
 }
-
-/* -------------------------------------------- */
 .Hero_Name_2-Holo{
-    font-family: Playfair Display SC;  /* "Playfair Display" is not giving Proper output thats why iam using "Playfair Display SC" here*/
-    /* color:transparent; */
+    font-family: Playfair Display SC;  
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: rgb(253,212,18);
 }
-
-/* .Hero_Name-2{
-    color: rgb(253,212,18);
-    color: linear-gradient(112deg, rgba(253,212,18,1) 0%, rgba(255,244,137,1) 100%);
-} */
 .Hero_Sub{
     display: flex;
     align-items: center;
@@ -150,17 +107,13 @@
     width: 610px;
     text-align: center;
     font-weight: 500;
-    /* transform: translateX(700px); */
-    /* margin-left: 650px; */
 }
-
 .Hero_Btn{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
 }
-
 button{
     cursor: pointer;
     border-radius: 10px;
@@ -176,13 +129,11 @@ button{
     padding: 20px;
     margin-right: 40px;
 }
-
 .Hero_Btn-1:hover{
     opacity: 0.7;
     transition: 0.3s ease;
     transform: scale(0.95);
 }
-
 .Hero_Btn-2{
     width: 200px;
     font-size: 24px;
@@ -191,9 +142,7 @@ button{
     background: transparent;
     border: 1px solid white;
     padding: 19px;
-
 }
-
 .Hero_Btn-2:hover{
     opacity: 0.7;
     background-color: #fff;
@@ -201,7 +150,6 @@ button{
     transition: 0.3s ease;
     transform: scale(0.95);
 }
-
 .About_Container{
     padding-top: 3rem;
     width: auto;
@@ -209,57 +157,38 @@ button{
     background: rgb(114,65,17);
     background: radial-gradient(circle, rgba(114,65,17,1) 0%, rgba(0,0,0,1) 43%);
 }
-
 .About_Title{
     text-align: center;
     font-weight: 800;
     font-size: 140px;
-
-    font-family: Arial, Helvetica, sans-serif;  /* "Playfair Display" is not giving Proper output thats why iam using "Playfair Display SC" here*/
-    /* color:transparent; */
+    font-family: Arial, Helvetica, sans-serif;  
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
 }
-
 .Body_About-Container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .Body_About{
     border-radius: 10px;
-    /* background: cyan; */
     background: radial-gradient(circle, rgba(114,65,17,1) 0%, rgba(0,0,0,1) 43%);
     width: 1580px;
     height: 650px;
     box-shadow: 0px 0px 15px #fff;
-
-
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* padding: 0px; */
 }
-
 .Body_About-Text{
     font-weight: 500;
     font-size: 35px;
     width: 750px;
 }
-
 .Body_About-Img{
     border-radius: 10px;
     box-shadow: 0px 0px 10px #fff;
-    filter: grayscale(100);
 }
-
-.Body_About-Img:hover{
-    transition: 0.3s ease-in-out;
-    /* transform: scale(0.95); */
-    filter: grayscale(0);
-}
-
 .Container-B{
     background: rgb(0,0,0);
     background: linear-gradient(110deg, rgba(0,0,0,1) 57%, rgba(114,65,17,1) 100%);
@@ -270,14 +199,12 @@ button{
     flex-direction: column;
     align-items: center;
 }
-
 .Skills_container p{
     padding-top: 8rem;
     font-weight: 400;
     font-size: 60px;
     padding-bottom: 60px;
 }
-
 .skills{
     padding-bottom: 80px;
     width: 80%;
@@ -287,32 +214,24 @@ button{
 }
 .skills img{
     height: 160px;
-    /* box-shadow: 0px 0px 10px #fff; */
-    
 }
-
 .skills img:hover{
     transition: 0.3s ease;
     transform: scale(0.9);
 }
-
 .P-title{
     width: 15%;
-    height: 250px;
-    /* margin-left: 1500px; */
+    height: auto;
     margin-top: 200px;
 }
-
 .P-title p{
     font-family: Arial, Helvetica, sans-serif;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2px;
-
     font-weight: bolder;
     font-size: 250px;
     transform: rotateZ(90deg);
 }
-
 .Projects_wraper{
     padding-top: 4rem;
     width: auto;
@@ -320,62 +239,47 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid yellow; */
     padding-bottom: 5rem;
 }
 .Projects_Container{
     height: auto;
     display: flex;
     width: 100%;
-    /* padding: 3rem; */
     margin: 0rem 5rem;
-    /* border: 1px solid cyan; */
 }
-
 .Projects{
-    /* padding: 10px; */
     height: auto;
     width: 85%;
-    /* border: 1px solid white; */
-    /* margin-left: 80px; */
     margin-right: 4rem;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 3rem;
 }
-
 .Cells{
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
     border-radius: 10px;
 }
-
 .Cell-1{
     grid-column: 1/3;
     grid-row: 1/3;
 }
-
 .Cell-2{
     grid-column: 1/2;
     grid-row: 3/4;
 }
-
 .Cell-3{
     grid-column: 2/3;
     grid-row: 3/4;
 }
-
 .Cell-4{
     grid-column: 1/2;
     grid-row: 4/5;
 }
-
 .Cell-5{
     grid-column: 2/3;
     grid-row: 4/5;
 }
-
 .Projects a{
     display: block;
     width: auto;
@@ -384,17 +288,13 @@ button{
 .P{
     width: 100%;
     border-radius: 10px;
-
 }
-
-/* ------------- Image Hover Effect ------------ */
 .Projects a {
     position: relative;
     display: block;
     overflow: hidden;
     border-radius: 10px;
 }
-
 .Projects a::before {
     content: "";
     position: absolute;
@@ -407,11 +307,9 @@ button{
     transition: opacity 0.3s ease;
     z-index: 1;
 }
-
 .Projects a:hover::before {
     opacity: 1;
 }
-
 .Projects a::after {
     content: "Know More";
     position: absolute;
@@ -425,25 +323,18 @@ button{
     transition: opacity 0.3s ease;
     z-index: 2;
 }
-
 .Projects a:hover::after {
     opacity: 1;
 }
-
 .P {
     transition: opacity 0.3s ease;
     display: block;
     width: 100%;
     height: auto;
 }
-
 .Projects a:hover .P {
     opacity: 0.3;
 }
-/* --------------------------------------------------------- */
-
-/* -------------------- Contact Me ------------------------- */
-
 .Contact-Me_container{
     padding-top: 5rem;
     padding-bottom: 6rem;
@@ -453,288 +344,209 @@ button{
     justify-content: center;
     flex-direction: column;
 }
-
 .Contact-Me_Title{
     font-size: 7rem;
     font-weight: bolder;
     padding-bottom: 5rem;
     padding-top: 3rem;
 }
-
 .Contact-Me_Details{
     font-size: 2.5rem;
     padding-bottom: 3rem;
 }
-
 .Contact-Me_Details p{
     padding-bottom: 1.5rem;
 }
-
 .Email, .Mobile{
     color: rgb(253,212,18);
 }
-
 .Email-Titlt, .Mobile-Title, .Social-Title{
     text-decoration: 1.5px underline ;
 }
-
 .Social img{
     width: 8rem;
 }
-
 .Social img:hover{
     transition: 0.3s ease;
     transform: scale(0.9);
 }
-
-/* .Social-Img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-} */
-
 .Linkedin-png{
     padding-right: 2rem;
 }
-
 .Github-png{
     padding-left: 1.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ============= Media Queries ============= */
-
-/* For Laptops upto 1500 */
+@media (min-width: 1200px) {
+    .Body_About-Img{
+        filter: grayscale(100);
+    }
+    .Body_About-Img:hover{
+        transition: 0.3s ease-in-out;
+        filter: grayscale(0);
+    }
+}
 @media (max-width: 1500px) {
     .Hero_Container {
         height: 94vh;
     }
-
     .Hero_Name {
         font-size: 90px;
         padding-top: 300px;
     }
-
     .Hero_Name-1 {
         margin-bottom: 25px;
     }
-
     .Body_About {
         width: 90%;
         height: auto;
         padding: 40px 0;
     }
-
-    /* Skills Section */
     .skills img {
         height: 140px;
     }
-
     .Skills_container p {
         padding-top: 30px;
     }
-
-    /* Projects Section */
     .Projects {
         gap: 2rem;
     }
-
     .P-title p {
         font-size: 10rem;
     }
-
-    /* Contact Section */
     .Contact-Me_Title {
         font-size: 6rem;
     }
 }
-
-/* For screens smaller than 1200px */
 @media (max-width: 1200px) {
     .Hero_Container {
         width: auto;
         height: auto;
         padding-bottom: 100px;
     }
-
     .Hero_Name {
         font-size: 60px;
         padding-top: 150px;
     }
-
     .Hero_Name-1 {
         margin-bottom: 45px;
     }
-
     .Hero_Sub p {
         margin-left: 0;
         width: 80%;
         margin: 0 auto;
         font-size: 35px;
     }
-
     .About_Container {
         height: auto;
     }
-
     .Body_About-Container {
         height: auto;
         padding-bottom: 30px;
     }
-
     .Body_About {
         width: 90%;
         height: auto;
         padding: 40px 0;
     }
-
     .Body_About-Text {
         font-size: 23px;
         width: 60%;
     }
-
     .Body_About-Img {
         width: 300px;
     }
-
-    /* Skills Section */
     .skills {
         width: auto;
     }
-
     .skills img {
         height: 100px;
         margin: 0 10px;
     }
-
-    /* Projects Section */
     .Projects_Container {
         flex-direction: column-reverse;
         align-items: center;
     }
-
     .P-title {
         width: 100%;
         height: auto;
         margin: 2rem 0;
         text-align: center;
     }
-
     .P-title p {
         font-size: 170px;
         transform: rotateZ(0);
         -webkit-text-stroke: 1px;
         margin: 0;
     }
-
     .Projects {
         width: 90%;
         margin: 0 auto;
     }
-
-    /* Contact Section */
     .Contact-Me_Title {
         font-size: 5rem;
     }
-
     .Contact-Me_Details {
         font-size: 2rem;
     }
 }
-
-/* For tablets (768px - 992px) */
 @media (max-width: 992px) {
     .Hero_Container {
         width: auto;
         height: auto;
         padding-bottom: 100px;
     }
-
     .Hero_Nav {
         height: 60px;
     }
-
     .Hero_Nav-Logo {
         margin-left: 60px;
         font-size: 40px;
     }
-
     .Hero_Nav-Links {
         margin-right: 60px;
         font-size: 20px;
     }
-
     .Hero_Name {
         font-size: 50px;
         padding-top: 120px;
     }
-
     .Hero_Name-1 {
         margin-bottom: 45px;
     }
-
     .Hero_Name-1,
     .Hero_Name-2 {
         margin-left: 0 !important;
     }
-
     .Body_About-Container {
         height: auto;
         padding-bottom: 30px;
     }
-
     .About_Title {
         font-size: 100px;
     }
-
     .Body_About-Text {
         font-size: 24px;
         width: 70%;
     }
-
     .Body_About-Img {
         width: 300px;
     }
-
-    /* Skills Section */
     .skills img {
         height: 120px;
     }
-
-    /* Projects Section */
     .Projects_Container {
         margin: 0rem 3rem;
     }
-
     .P-title {
         margin-top: 150px;
     }
-
     .P-title p {
         font-size: 100px;
     }
-
     .Projects {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-
     .Cell-1,
     .Cell-2,
     .Cell-3,
@@ -743,121 +555,92 @@ button{
         grid-column: auto;
         grid-row: auto;
     }
-
-    /* Contact Section */
     .Contact-Me_Title {
         font-size: 4rem;
         padding: 2rem 0;
     }
-
     .Social img {
         width: 6rem;
     }
 }
-
-/* For small tablets and large phones (576px - 768px) */
 @media (max-width: 768px) {
     .Hero_Container {
         width: auto;
         height: auto;
         padding-bottom: 100px;
     }
-
     .Hero_Nav {
         height: 60px;
     }
-
     .Hero_Nav-Logo {
         margin-left: 30px;
         font-size: 35px;
     }
-
     .Hero_Nav-Links {
         margin-right: 30px;
         font-size: 18px;
     }
-
     .Hero_Name {
         font-size: 40px;
         padding-top: 100px;
     }
-
     .Hero_Name-1 {
         margin-bottom: 50px;
     }
-
     .Hero_Sub p {
         font-size: 28px;
     }
-
     .Hero_Btn {
         gap: 20px;
     }
-
     .About_Title {
         font-size: 80px;
     }
-
     .Body_About-Container {
         height: auto;
         padding-bottom: 30px;
     }
-
     .Body_About {
         flex-direction: column;
         text-align: center;
         gap: 40px;
         padding: 40px 20px;
     }
-
     .Body_About-Text {
         width: 100%;
         font-size: 22px;
     }
-
     .Body_About-Img {
         width: 250px;
     }
-
-    /* Skills Section */
     .skills {
         flex-wrap: wrap;
         justify-content: center;
         gap: 2rem;
     }
-
     .skills img {
         height: 100px;
     }
-
-    /* Projects Section */
     .Projects {
         width: 100%;
     }
-
     .P-title {
         width: auto;
         height: auto;
         margin-top: 0;
     }
-
     .P-title p {
         font-size: 80px;
         padding: 1rem 0;
         margin-top: 2rem;
     }
-
-    /* Contact Section */
     .Contact-Me_Title {
         font-size: 3.5rem;
     }
-
     .Contact-Me_Details {
         font-size: 1.5rem;
     }
 }
-
-/* For mobile phones (up to 576px) */
 @media (max-width: 576px) {
     .Hero_Container {
         margin-top: 60px;
@@ -865,45 +648,36 @@ button{
         height: auto;
         padding-bottom: 30px;
     }
-
     .Hero_Nav {
         height: 60px;
     }
-
     .Hero_Nav-Logo {
         margin-left: 20px;
         font-size: 30px;
     }
-
     .Hero_Nav-Links {
         display: none;
     }
-
     .Hero_Name {
         font-size: 40px;
         padding-top: 30px;
         text-align: center;
     }
-
     .Hero_Name-1 {
         margin-bottom: 50px;
     }
-
     .Hero_Name_2-Holo {
         font-size: 2rem;
     }
-
     .Hero_Sub p {
         font-size: 20px;
         width: 80%;
     }
-
     .Hero_Btn {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
     }
-
     .Hero_Btn-1,
     .Hero_Btn-2 {
         width: 180px;
@@ -911,66 +685,49 @@ button{
         padding: 15px;
         margin-right: 0px;
     }
-
     .Body_About-Container {
         height: auto;
         padding-bottom: 30px;
     }
-
     .About_Title {
         font-size: 60px;
     }
-
     .Body_About-Text {
         font-size: 18px;
     }
-
     .Body_About-Img {
         width: 200px;
     }
-
-    /* Skills Section */
     .skills {
         gap: 1.5rem;
         padding: 0 1rem;
     }
-
     .skills img {
         height: 80px;
         margin: 0;
     }
-
-    /* Projects Section */
     .P-title p {
         font-size: 50px;
     }
-
     .Projects_Container {
         flex-direction: column-reverse;
         margin: 0 1rem;
     }
-
     .Projects {
         width: 300px;
-        /* margin-right: 0; */
         gap: 1.5rem;
     }
-
-    /* Contact Section */
     .Contact-Me_Title {
         font-size: 2.5rem;
     }
-
     .Contact-Me_Details {
         font-size: 1.2rem;
         padding: 0 1rem;
     }
-
     .Social {
         flex-direction: column;
         align-items: center;
     }
-
     .Social img {
         width: 4rem;
         margin: 0.5rem 0;
